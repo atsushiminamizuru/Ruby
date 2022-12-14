@@ -1,1 +1,18 @@
-puts 1 / 3
+class Car
+
+  def move(direction, distance)
+    turn(direction)
+    run(distance)
+  end
+
+  def turn(direction)
+    puts "#{direction}に曲がります。"
+  end
+
+  def run(distance)
+    puts "車で#{distance}キロ走ります。"
+  end
+end
+
+car = Car.new
+car.move("右", 5)
